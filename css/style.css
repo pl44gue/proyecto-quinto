@@ -1,51 +1,63 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 /* Header styles */
 header h1 {
-    color: darkblue;
+    color: #2c3e50;
     text-align: center;
     margin: 20px 0;
+    text-shadow: none;
+    animation: none;
 }
 
 /* Paragraph styles */
 p {
-    color: blue;
+    color: #555;
     margin: 10px 20px;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-style: normal;
 }
 
 /* Heading styles */
 h2 {
-    color: darkblue;
+    color: #2c3e50;
     margin: 20px 20px 10px;
+    text-transform: none;
+    border-bottom: 2px solid #ccc;
 }
 
 /* List styles */
 ul, ol {
     margin: 10px 40px;
     padding: 0;
+    list-style-type: disc;
 }
 
 li {
-    color: blue;
+    color: #555;
     margin: 5px 0;
+    transform: none;
 }
 
 /* Form styles */
 form {
-    color: blue;
+    color: #333;
     margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
 }
 
 form label {
     display: block;
     margin: 10px 0 5px;
+    font-weight: normal;
 }
 
 form input {
@@ -53,41 +65,49 @@ form input {
     margin-bottom: 10px;
     width: 100%;
     max-width: 300px;
+    border: 1px solid #ccc;
 }
 
 form button {
-    background-color: darkblue;
+    background-color: #2c3e50;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transform: none;
+    transition: background-color 0.2s ease-in-out;
 }
 
 form button:hover {
-    background-color: blue;
+    background-color: #34495e;
 }
 
 /* Footer styles */
 footer {
-    background-color: #222;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+    font-size: 1em;
 }
 
 footer a {
-    color: blue;
+    color: #3498db;
     text-decoration: none;
+    font-weight: normal;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #2980b9;
 }
 
 footer img {
     margin-top: 10px;
     max-width: 100px;
+    transform: none;
+    animation: none;
 }
 
 /* Image styles */
@@ -95,6 +115,8 @@ img {
     display: block;
     margin: 20px auto;
     max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0;
 }
 
 /* Video styles */
@@ -102,5 +124,25 @@ iframe {
     display: block;
     margin: 20px auto;
     max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: none;
 }
 
+/* Remove animations */
+@keyframes wiggle {
+    0%, 100% {
+        transform: none;
+    }
+    50% {
+        transform: none;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: none;
+    }
+    to {
+        transform: none;
+    }
+}
